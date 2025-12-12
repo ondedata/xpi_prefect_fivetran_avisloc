@@ -1,0 +1,7 @@
+version: 2.0
+
+deployment:
+  - name: "avis_locataire"
+    entrypoint: "fivetran_avis_locataire.py:sync_avis_locataire"
+    work_pool:
+      name: "default"
